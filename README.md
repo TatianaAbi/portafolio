@@ -9,6 +9,8 @@ Hola! , te presento mi portafolio como desarrolladora frontend usando react 💼
 ``` npm install```
 - ejecuta el comando
 ```  npm run dev ```
+- ejecuta el comando
+``` npm run start ```
 - abrir en el navegador la direcion http://localhost:5173
 
 ### Pre requisitos
