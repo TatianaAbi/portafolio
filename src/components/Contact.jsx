@@ -4,6 +4,7 @@ import { SocialLinksContainer } from "./SocialLinksContainer";
 import { InfoBox } from "./InfoBox";
 import { ImgContent } from "./ImgContent";
 import { ContainerInfo } from "./ContainerInfo";
+import { Button } from "./Button";
 
 function Contact() {
     return(
@@ -16,7 +17,9 @@ function Contact() {
                 <ContainerInfo>
                     <InfoBox title='Social Networks' sentence='i like this social network' styleContainer='center' />
                     <SocialLinksContainer />
+                    
                 </ContainerInfo>
+                <Button link="email" name='message'/>
                 
             </article>
         </div>

@@ -15,6 +15,7 @@ function Nav() {
                   <Link className="NavLinks" to="/">Home</Link>
                   <Link className="NavLinks" to="/about">About</Link>
                   <Link className="NavLinks" to="/contact">Contact</Link>
+                  
               </div>
           </div>
     </div>

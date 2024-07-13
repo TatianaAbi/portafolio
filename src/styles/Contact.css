@@ -2,7 +2,7 @@
     background:#0E0E0E;
     display:flex;
     justify-content:center;
-    height:100vh;
+     height:90.5vh; 
 }
 
 .contact article{
@@ -12,4 +12,8 @@
     flex-direction:column;
    width:30rem;
    height:25rem;
+}
+
+.button-container{
+    margin: 20px;
 }
