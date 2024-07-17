@@ -21,7 +21,7 @@ app.use(express.json())
 app.use(cors(options))
 
 
-app.post('/send',async(req,res)=>{
+app.post('/',async(req,res)=>{
     const {email,subject,message} = req.body
     const send = await service.sendMessage(email,subject,message)
     

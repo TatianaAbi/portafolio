@@ -8,7 +8,7 @@ async function CallData (email,subject,message){
         message:message
     }
 
-    await fetch('http://localhost:3010/send',{
+    await fetch('http://localhost:3010/',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
