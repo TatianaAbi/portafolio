@@ -2,7 +2,7 @@
 Hola! , te presento mi portafolio como desarrolladora frontend usando react 💼
 ## Instalacion
 - clonar el repositorio con:
-``` git clone https://github.com/TatianaAbi/portafolio-TatianaAbi.git ```
+``` git clone https://github.com/TatianaAbi/portafolio.git ```
 - entra a la carpeta del proyecto ejecuta el comando
 ``` cd portafolio```
 - ejecuta el comando 
