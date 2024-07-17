@@ -52,5 +52,5 @@ class ServiceEmail {
     }
     
 }
-
+console.log(process.env.PASSWORD)
 export {ServiceEmail}
