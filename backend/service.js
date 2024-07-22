@@ -11,7 +11,7 @@ class ServiceEmail {
         service:'gmail',
         auth:{
             user:'lg3165777@gmail.com',
-            pass:process.env.PASSWORD
+            pass: process.env.PASSWORD
         }
       })
 
