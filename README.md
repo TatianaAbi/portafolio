@@ -10,16 +10,22 @@ Hola! , te presento mi portafolio como desarrolladora frontend usando react 💼
 - clonar el repositorio con:
 ``` git clone https://github.com/TatianaAbi/portafolio-TatianaAbi.git ```
 - entra a la carpeta del proyecto ejecuta el comando
-``` cd portafolio```
+```bash
+   cd portafolio
+```
 - ejecuta el comando 
-``` npm install```
+```bash
+   npm install
+```
 - ejecuta el comando
-```  npm run dev ```
+```bash
+   npm run dev 
+```
 
 - abrir en el navegador la direcion http://localhost:5173
 
 - ejecuta en una terminal separada
 ```bash
-  npm run start 
+   npm run start 
 ```
 
