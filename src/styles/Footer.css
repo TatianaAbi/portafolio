@@ -1,20 +1,8 @@
-.footer-container{
+.footer{
     display:flex;
     background:#181818;
     height:5rem;
     justify-content:space-around;
     align-items:center;
     color:white;
-}
-.social-media-icons{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-gap:22px
-}
-.social-media-icons a img{
-    width:2rem;
-}
-.icons{
-    width:2rem;
-    height:2rem
 }

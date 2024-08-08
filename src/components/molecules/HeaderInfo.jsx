@@ -1,5 +1,5 @@
-import { Button } from "./Button"
-import '../styles/HeaderInfo.css'
+import { Button } from "../atoms/Button"
+import '../../styles/HeaderInfo.css'
 
 function HeaderInfo(){
     return(
@@ -7,7 +7,7 @@ function HeaderInfo(){
             <p className="title">hello</p>
             <h2 className="my-name"> I am Tatiana </h2>
             <p className="sentence">Frontend Web Designer & Developer</p> 
-        <Button name={'MORE'} link={'about'} />
+            <Button name={'MORE'} link={'about'} />
        </div>
     )
 }

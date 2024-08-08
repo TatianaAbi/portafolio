@@ -5,7 +5,7 @@
     --header-background--:#825361 ;
     --white--:white;
   }
-  
+
   .Header{
     background-image:url('../img/pinos-fondo.jpeg');
     background-size: cover;
@@ -16,23 +16,15 @@
     background: rgba(0, 0, 0, 0.5);
   }
 
-  
+
   .container-perfil{
-  
     display: grid;
-    grid-template-rows: 1fr 1fr; 
-     width: 20rem; 
+    grid-template-rows: 1fr 1fr;
+     width: 20rem;
     justify-content: center;
     align-items: center;
   }
 
-  .photo img{
-    border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
-    border: 2px solid white;
-  }
-  
   @media (min-width:775px) {
     .container-options{
       font-size:2rem

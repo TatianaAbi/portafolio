@@ -1,9 +1,7 @@
-import '../styles/Main.css'
-import { Button } from "./Button"
-import { ImgContent } from './ImgContent'
-import { InfoBox } from './InfoBox'
-import { ArticleContainer } from './ArticleContainer'
-
+import '../../styles/Main.css'
+import { Button } from "../atoms/Button"
+import { ImgContent } from '../atoms/ImgContent'
+import { InfoBox } from '../atoms/InfoBox'
 const info= {
     title:'About Me',
     text:`Hello, I am Tatiana Abigail and I am a frontent developer.
@@ -13,20 +11,14 @@ const info= {
 }
 
 function Main({children}) {
-
     return(
     <div className="Main-container">
-
-        <section className="article-container">
-
-            <ArticleContainer>
-                <ImgContent style={'cart-img-container'}/>
+        <section className='article-container'>
+                <ImgContent style={'image_cart'}/>
                 <div className="description">
                     <InfoBox sentence={info.text} title={info.title}/>
                     <Button name="More" link="about" />
-                </div>
-            </ArticleContainer>
-                
+                </div>         
         </section>
         <section>
         {children}

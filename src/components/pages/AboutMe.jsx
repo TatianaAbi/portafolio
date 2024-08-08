@@ -1,12 +1,12 @@
-import '../styles/AboutMe.css'
-import ImgCat from "../img/gato.png"
-import { ImgContent } from "./ImgContent"
-import { Button } from "./Button"
-import { InfoBox } from './InfoBox'
-import { WhoIAm } from './WhoIAm'
-import { BoxPresentation } from './BoxPresentation'
-import { BioInfo } from './BioInfo'
-import { Nav } from './Nav'
+import '../../styles/AboutMe.css'
+import ImgCat from "../../img/gato.png"
+import { ImgContent } from "../atoms/ImgContent"
+import { Button } from "../atoms/Button"
+import { InfoBox } from '../atoms/InfoBox'
+import { CartPresentation } from '../atoms/CartPresentation'
+import { BoxPresentation } from '../molecules/BoxPresentation'
+import { BioInfo } from '../molecules/BioInfo'
+import { Nav } from '../molecules/Nav'
 
 const MoreInfo =[
     {
@@ -40,7 +40,7 @@ function AboutMe() {
         <Nav />
         <section className="about-section">
             <ImgContent img={ImgCat} />
-            <WhoIAm />
+            <CartPresentation />
             <BoxPresentation />
 
             {MoreInfo.map((info)=>

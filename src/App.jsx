@@ -1,12 +1,12 @@
-import { Home } from './components/Home'
+import { Home } from './components/pages/Home'
 import './App.css'
 import { HashRouter,Route,Routes } from 'react-router-dom'
-import { DefaultProjects } from './components/DefaultProjects'
-import { Projects } from './components/Projects'
-import { NotFound } from './components/NotFound'
-import { Contact } from './components/Contact'
-import { AboutMe } from './components/AboutMe'
-import { Formulario } from './components/Formulario'
+import { DefaultProjects } from './components/molecules/DefaultProjects'
+import { Projects } from './components/organisms/Projects'
+import { NotFound } from './components/molecules/NotFound'
+import { Contact } from './components/pages/Contact'
+import { AboutMe } from './components/pages/AboutMe'
+import { Formulario } from './components/molecules/Formulario'
 
 function App() {
   return(

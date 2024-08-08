@@ -28,12 +28,12 @@
     justify-content:center;
     align-items:center;
   }
-  .project-img{
+  .project-imgs{
      display: flex;
     justify-content: center;
     
   }
-  .project-img img{
+  .project_image{
     height:15rem;
     width:18rem;
     border-radius: 10%;
@@ -49,14 +49,6 @@
     padding: 1rem;
     text-align: center; 
   }
-  .project-description h2{
-    color: yellow;
-    font-size: 1.5rem;
-  }
-  .project-description p{
-    color: white;
-    font-size: 1rem;
-  } 
   @media (min-width:886px){
     .project-img{
       width:23rem

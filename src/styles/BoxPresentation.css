@@ -4,13 +4,13 @@
 
     padding-block:24px
 }
-.My-name{
-    text-aling:center
+.Myname{
+    text-align:center
 }
-.presentation h2{
+.presentation_title{
     font-size:1.7rem
   }
-.presentation p{
+.presentation_sentence{
     margin-top:-1.5rem;
     font-size:1rem
 }

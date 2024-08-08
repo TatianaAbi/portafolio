@@ -1,20 +1,8 @@
-p{
-    font-size:1rem;
-    
-}
-h2{
-    
-}
-.center{
-    display:grid;
-    place-items:center;
-}
-.right{
+.infobox{
     display:grid;
     justify-content:right
 }
-.title-sentence{
+.infobox_title{
     font-size:1.3rem;
-    margin-bottom:-1rem;
     border-bottom:3px solid #D01082;
 }

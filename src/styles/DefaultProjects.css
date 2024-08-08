@@ -1,19 +1,4 @@
-.defaultComponentProjects{
-    height:20rem; 
-   display: grid;
-   place-items: center;
-   color:white;
-}
-.defaultComponent{
-   display: grid;
-   place-items: center;
-   background:#181A21;
-   border:2px solid #181818;
-   font-size:1.2rem
-}
-.cat img{
-   width:8rem;
-}
-.defaultComponent p{
+
+.default_margin{
    margin:2rem;
 }

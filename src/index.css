@@ -12,10 +12,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body{
+  font-size: 1rem;
+}
 
- a {
-  font-weight: 500;
-  text-decoration: inherit;
+a{
+  text-decoration:none;
+  font-size:1.3rem;
+  color:white;
+  text-align: center;
 }
 
 
@@ -23,7 +28,9 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+p{
+  font-size:1rem;   
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -41,6 +48,44 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.center-item{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+.container-info{
+  background:#181A21;
+  border:2px  solid #181818;
+  width:25rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-size:1.5rem;
+  margin:10px;
+  height: auto;
+}
+
+.article-container{
+  padding-block: 3rem;
+  padding:2rem;
+  display:grid;
+  align-items: center;
+  grid-template-columns:1fr 1fr;
+}
+
+
+@media (max-width:775px) {
+
+  .article-container{
+    
+    display:grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-columns:1fr 
+  }
 }
 
 @media (prefers-color-scheme: light) {

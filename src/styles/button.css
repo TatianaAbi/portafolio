@@ -1,21 +1,13 @@
-.button-container{
+.btn{
     height: 2.4rem;
-    text-decoration: none;
-    border: 2px solid #D01082;
-    display: flex;
     width: 9rem;
     font-size: 1.5rem;
-    justify-content: center;
-    align-items: center;
+    margin: 10px; 
+    text-decoration: none;
+    border: 2px solid #D01082; 
+    color:white; 
 }
-.btn{
-    color:white
-}
-.button-container:hover{
+.btn:hover{
     background:#D01082;
     border:2px solid white;
-}
-.btn-content{
-    display:grid;
-    justify-items:center;
 }
