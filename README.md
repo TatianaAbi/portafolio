@@ -22,10 +22,12 @@ Hola! , te presento mi portafolio como desarrolladora frontend usando react 💼
    npm run dev 
 ```
 
-- abrir en el navegador la direcion http://localhost:5173
+
 
 - ejecuta en una terminal separada
 ```bash
    npm run start 
 ```
+- abrir en el navegador la direcion http://localhost:5173
+
 
