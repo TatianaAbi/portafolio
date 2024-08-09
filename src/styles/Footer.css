@@ -1,8 +1,8 @@
-.footer{
-    display:flex;
-    background:#181818;
-    height:5rem;
-    justify-content:space-around;
-    align-items:center;
-    color:white;
+.footer {
+  display: flex;
+  background: #181818;
+  height: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
 }

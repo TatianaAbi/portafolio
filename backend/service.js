@@ -1,21 +1,18 @@
-import nodemailer from "nodemailer"
-import dotenv from "dotenv"
+import nodemailer from 'nodemailer'
+import dotenv from 'dotenv'
 dotenv.config()
 
-
 class ServiceEmail {
-    constructor(){}
+  sendMessage(email, subject, message) {
+    const transport = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'lg3165777@gmail.com',
+        pass: process.env.PASSWORD
+      }
+    })
 
-    sendMessage(email,subject,message){
-      const transportar = nodemailer.createTransport({
-        service:'gmail',
-        auth:{
-            user:'lg3165777@gmail.com',
-            pass: process.env.PASSWORD
-        }
-      })
-
-      const htmlread = `
+    const htmlRead = `
           <section>
             <article>
               <h2>tienes un nuevo mensaje de tu portafolio</h2>
@@ -34,23 +31,23 @@ class ServiceEmail {
             </article>
           </section>`
 
-      const info = {
-        from:email,
-        to:'lg3165777@gmail.com',
-        subject:subject,
-        text:message,
-        html:htmlread,
-      }
-      const sendInfo = transportar.sendMail(info,(error,info)=>{
-        if(error){
-            console.log(error)
-        }else{
-            console.log('message '+ info.response)
-        }
-      })
-      return sendInfo
+    const info = {
+      from: email,
+      to: 'lg3165777@gmail.com',
+      subject: subject,
+      text: message,
+      html: htmlRead
     }
-    
+
+    const sendInfo = transport.sendMail(info, (error, info) => {
+      if (error) {
+        console.log(error)
+      } else {
+        console.log('message ' + info.response)
+      }
+    })
+    return sendInfo
+  }
 }
 
-export {ServiceEmail}
+export { ServiceEmail }

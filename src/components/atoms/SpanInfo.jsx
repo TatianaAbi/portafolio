@@ -1,7 +1,9 @@
-function SpanInfo({date,sentence}){
-return(
-    <li><span>{date}</span>   {sentence}</li>
-)
+function SpanInfo({ date, sentence }) {
+  return (
+    <li>
+      <span>{date}</span> {sentence}
+    </li>
+  )
 }
 
-export {SpanInfo}
+export { SpanInfo }

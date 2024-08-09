@@ -1,8 +1,9 @@
-.infobox{
-    display:grid;
-    justify-content:right
+.info-box {
+  display: grid;
+  justify-content: right
 }
-.infobox_title{
-    font-size:1.3rem;
-    border-bottom:3px solid #D01082;
+
+.info-box_title {
+  font-size: 1.3rem;
+  border-bottom: 3px solid #D01082;
 }
