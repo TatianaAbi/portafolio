@@ -1,15 +1,15 @@
-.contact{
-    background:#0E0E0E;
-     height:100vh; 
+.contact {
+  background: #0E0E0E;
+  height: 100vh;
 }
 
-.contact-info{
-    display: grid;
-    place-items: center;
-   width:100%;
-   height:auto;
-} 
+.contact-info {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: auto;
+}
 
-.button-container{
-    margin: 20px;
+.button-container {
+  margin: 20px;
 }

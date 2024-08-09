@@ -1,43 +1,26 @@
+:root {
+  --header-background--: #825361;
+  --white--: white;
+}
 
+.Header {
+  background-image: url('../img/pinos-fondo.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+.header-shallow {
+  background: rgba(0, 0, 0, 0.5);
+}
 
-:root{
-    --header-background--:#825361 ;
-    --white--:white;
+@media (min-width:775px) {
+  .container-options {
+    font-size: 2rem
   }
 
-  .Header{
-    background-image:url('../img/pinos-fondo.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  .profile {
+    box-sizing: border-box;
+    padding: 90px 20px 150px 20px;
   }
-   .header-shallow{
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-
-  .container-perfil{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-     width: 20rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (min-width:775px) {
-    .container-options{
-      font-size:2rem
-    }
-    .perfil{
-      box-sizing: border-box;
-      padding: 90px 20px 150px 20px;
-     }
-    .container-perfil{
-      display:grid;
-      grid-template-rows:none;
-      grid-template-columns:1fr 1fr;
-      justify-items: center;
-      width: 75rem;
-    }
-  }
+}

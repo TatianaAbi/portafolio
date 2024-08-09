@@ -1,38 +1,38 @@
-import "../../styles/Home.css"
-import { Nav } from "../molecules/Nav"
-import { Header } from "../organisms/Header"
-import { Main } from "../organisms/Main"
-import { portafolioData } from "../portafolioData"
-import {  Outlet } from "react-router-dom"
-import { ProjectLinks } from "../atoms/ProjectLinks"
-import { Footer } from "../organisms/Footer"
-import { DefaultProjects } from "../molecules/DefaultProjects"
-import { useState } from "react"
+import { useState } from 'react'
+import { Outlet } from 'react-router-dom'
+
+import { Nav } from '../molecules/Nav'
+import { Header } from '../organisms/Header'
+import { Main } from '../organisms/Main'
+import { portfolioData } from '../portfolioData'
+import { ProjectLinks } from '../atoms/ProjectLinks'
+import { Footer } from '../organisms/Footer'
+import { DefaultProjects } from '../molecules/DefaultProjects'
+
+import '../../styles/Home.css'
 
 function Home() {
-    const [view, setview]= useState(false)
+  const [view, setView] = useState(false)
 
-    return(
+  return (
     <>
-    <Nav/>
-    <Header/>
-    <Main>
-    <div className="links-container">
-        <div className="links-list">
-            {portafolioData.map(post=>(
-                <ProjectLinks post={post} key={post.slug} setview={setview} />
+      <Nav />
+      <Header />
+      <Main>
+        <div className='links-container'>
+          <div className='links-list'>
+            {portfolioData.map(post => (
+              <ProjectLinks post={post} key={post.slug} setView={setView} />
             ))}
-        </div> 
-    </div>
-    <div className="visual-container">
-        {view ? <Outlet/> : <DefaultProjects/> }
-    </div>
-    </Main>
-    <Footer/>
-
+          </div>
+        </div>
+        <div className='visual-container'>
+          {view ? <Outlet /> : <DefaultProjects />}
+        </div>
+      </Main>
+      <Footer />
     </>
-    )
+  )
 }
 
-
-export {Home}
+export { Home }

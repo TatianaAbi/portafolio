@@ -1,13 +1,14 @@
-.links-container{
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-}
-.links-list{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.links-container {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
-.link-option:hover{
-    text-decoration:underline; 
+.links-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.link-option:hover {
+  text-decoration: underline;
 }
