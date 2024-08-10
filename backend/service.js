@@ -7,7 +7,7 @@ class ServiceEmail {
     constructor(){}
 
     sendMessage(email,subject,message){
-      const transportar = nodemailer.createTransport({
+      const transport = nodemailer.createTransport({
         service:'gmail',
         auth:{
             user:'lg3165777@gmail.com',
@@ -15,7 +15,7 @@ class ServiceEmail {
         }
       })
 
-      const htmlread = `
+      const htmlRead = `
           <section>
             <article>
               <h2>tienes un nuevo mensaje de tu portafolio</h2>
@@ -39,9 +39,9 @@ class ServiceEmail {
         to:'lg3165777@gmail.com',
         subject:subject,
         text:message,
-        html:htmlread,
+        html:htmlRead,
       }
-      const sendInfo = transportar.sendMail(info,(error,info)=>{
+      const sendInfo = transport.sendMail(info,(error,info)=>{
         if(error){
             console.log(error)
         }else{

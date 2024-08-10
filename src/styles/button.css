@@ -1,13 +1,13 @@
-.btn{
-    height: 2.4rem;
-    width: 9rem;
-    font-size: 1.5rem;
-    margin: 10px; 
-    text-decoration: none;
-    border: 2px solid #D01082; 
-    color:white; 
+.button {
+  height: 2.4rem;
+  width: 9rem;
+  font-size: 1.5rem;
+  margin: 10px;
+  text-decoration: none;
+  border: 2px solid #d01082;
+  color: white;
 }
-.btn:hover{
-    background:#D01082;
-    border:2px solid white;
+.button:hover {
+  background: #d01082;
+  border: 2px solid white;
 }

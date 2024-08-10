@@ -1,27 +1,28 @@
-.image{
-    display:flex;
-    justify-content:center;
-    
-}
-.image_width--default{
-    width:10rem
-}
-.image_cart{
-  border:8px solid #181818;
-  width:18rem;
-  height:20rem;
+.image {
+  display: flex;
+  justify-content: center;
 }
 
-
-.image_circule{
-    border-radius: 50%;
-    border: 2px solid white;
-}
-.min{
-  width:50%;
+.image_width--default {
+  width: 10rem;
 }
 
-.max{
+.image_cart {
+  border: 8px solid #181818;
+  width: 18rem;
+  height: 20rem;
+}
+
+.image_circle {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.min {
+  width: 50%;
+}
+
+.max {
   width: 15rem;
   height: 15rem;
 }

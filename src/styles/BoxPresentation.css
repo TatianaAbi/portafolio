@@ -1,16 +1,16 @@
-.presentation{
-    display:grid;
-    grid-template-columns:2fr 1fr;
+.presentation {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 
-    padding-block:24px
+  padding-block: 24px;
 }
-.Myname{
-    text-align:center
+.my-name {
+  text-align: center;
 }
-.presentation_title{
-    font-size:1.7rem
-  }
-.presentation_sentence{
-    margin-top:-1.5rem;
-    font-size:1rem
+.presentation_title {
+  font-size: 1.7rem;
+}
+.presentation_sentence {
+  margin-top: -1.5rem;
+  font-size: 1rem;
 }

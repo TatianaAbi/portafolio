@@ -1,7 +1,11 @@
-function SpanInfo({date,sentence}){
-return(
-    <li><span>{date}</span>   {sentence}</li>
-)
+import React from "react";
+
+function SpanInfo({ date, sentence }) {
+  return (
+    <li>
+      <span>{date}</span> {sentence}
+    </li>
+  );
 }
 
-export {SpanInfo}
+export { SpanInfo };

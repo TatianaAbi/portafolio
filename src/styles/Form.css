@@ -1,70 +1,78 @@
-.articles{
+.articles {
   position: relative;
   height: 90.6vh;
 }
-.sendEmail{
-    display: grid;
-    place-items: center;
-    position: relative;
+
+.send-email {
+  display: grid;
+  place-items: center;
+  position: relative;
 }
-.sendEmail_form{
+
+.send-email_form {
   width: 22rem;
 }
 
-.sendEmail_title{
+.send-email_title {
   font-size: 1.5rem;
-  color: #ED0083;
+  color: #ed0083;
 }
-.sendEmail_text{
-    line-height: 1px;
+
+.send-email_text {
+  line-height: 1px;
 }
-.sendEmail-space{
+
+.send-email_space {
   margin-block: 10px;
   width: 100%;
 }
-.sendEmail_input{
+
+.send-email_input {
   height: 25px;
   width: 100%;
 }
-.box_message{
-    height: 200px;
-    width: 100%;
+
+.box_message {
+  height: 200px;
+  width: 100%;
 }
-.sendEmail_input_button{
+
+.send-email_input_button {
   width: 100%;
   height: 3rem;
   font-size: 1rem;
   margin-block: 30px;
 }
 
-.notification_shallow_box{
+.notification_shallow_box {
   position: absolute;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background:#222023ba ;
+  background: #222023ba;
   width: 100%;
   height: 100%;
 }
-.inactive{
+
+.inactive {
   display: none;
 }
 
-.notification_box{
+.notification_box {
   display: grid;
   place-content: center;
   justify-items: center;
-  background-color:#242A30 ;
+  background-color: #242a30;
   width: 20rem;
   height: 10rem;
 }
 
-.notification_text{
+.notification_text {
   font-size: 1rem;
 }
 
-.notification_button{
+.notification_button {
   width: 10rem;
   height: 3rem;
 }

@@ -1,0 +1,9 @@
+{
+    "recommendations":[
+        "streetsidesoftware.code-spell-checker",//corrigue errores de escritura
+        "streetsidesoftware.code-spell-checker-spanish",//añade soporte de correccion de escritura pero en español
+        "dbaeumer.vscode-eslint",//integra eslint a vscode
+        "esbenp.prettier-vscode",//integra prettier
+        "wmaurer.change-case"//cambiar palabras de mayuscula a minuscula usar camelcase o snake_case
+    ]
+}

@@ -1,13 +1,13 @@
-import '../../styles/InfoBox.css'
+import React from "react";
+import "../../styles/InfoBox.css";
 
-
-function InfoBox({title,sentence}){
-    return(
-        <div className='infobox'>
-           <h2 className='infobox_title'>{title}</h2>
-           <p>{sentence}</p>
-        </div>
-    )
+function InfoBox({ title, sentence }) {
+  return (
+    <div className="info-box">
+      <h2 className="info-box_title">{title}</h2>
+      <p>{sentence}</p>
+    </div>
+  );
 }
 
-export {InfoBox}
+export { InfoBox };

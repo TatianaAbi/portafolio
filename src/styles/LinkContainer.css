@@ -1,12 +1,12 @@
-.container-icons{
+.container-icons {
     display: flex;
     width: 20vw;
     justify-content: space-around;
-    gap:25px;
+    gap: 25px;
 }
 
-.icons{
-    width:2rem;
-    height:2rem;
-    color:white;
+.icons {
+    width: 2rem;
+    height: 2rem;
+    color: white;
 }

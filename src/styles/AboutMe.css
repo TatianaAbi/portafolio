@@ -1,30 +1,33 @@
-.AboutMe{
-    display:grid;
-    justify-items:center; 
-    background:#0e0e0e;   
-     color:white;
-}
-.about-section{
-    max-width:550px;
-    padding:2rem
-}
-.cat-container{
-    display:flex;
-    justify-content:center;
-    padding-top:2rem
+.about-me {
+    display: grid;
+    justify-items: center;
+    background: #0e0e0e;
+    color: white;
 }
 
-.c{
-    background:#181A21;
-    width:100%;
-    display:flex;
-    justify-content:center
-}
-.inactive{
-    display:none
+.about-section {
+    max-width: 550px;
+    padding: 2rem
 }
 
-.btn-content{
-    display:grid;
-    justify-items:center;
+.cat-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem
+}
+
+.copyright {
+    background: #181A21;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.inactive {
+    display: none
+}
+
+.button-content {
+    display: grid;
+    justify-items: center;
 }
