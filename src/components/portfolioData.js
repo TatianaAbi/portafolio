@@ -7,7 +7,7 @@ import foodImg from "../img/food.png";
 import batatabitImg from "../img/batatabit.png";
 import randomCatImg from "../img/randomCats.png";
 
-export const portfolioData = [
+export let portfolioData= [
   {
     linkName: "projects",
     slug: "projects",

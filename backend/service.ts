@@ -6,7 +6,7 @@ dotenv.config()
 class ServiceEmail {
     constructor(){}
 
-    sendMessage(email,subject,message){
+    sendMessage(email:string,subject:string,message:string){
       const transport = nodemailer.createTransport({
         service:'gmail',
         auth:{

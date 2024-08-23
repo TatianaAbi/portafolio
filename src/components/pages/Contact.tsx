@@ -19,7 +19,6 @@ function Contact() {
           <InfoBox
             title="Social Networks"
             sentence="i like this social network"
-            styleContainer="center"
           />
           <SocialLinksContainer />
         </div>

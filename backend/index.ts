@@ -8,8 +8,8 @@ const service = new ServiceEmail();
 const whitelist = ["http://localhost:5173"];
 
 const options = {
-  origin: (origin, callback) => {
-    if (whitelist.includes(origin) || !origin) {
+  origin: (origin:string | undefined , callback:any) => {
+    if (whitelist.includes(origin || "") || !origin) {
       callback(null, true);
     } else {
       callback(new Error("la direccion no tiene los permisos"));

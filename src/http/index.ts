@@ -1,5 +1,7 @@
-async function CallData(email, subject, message) {
-  const formInfo = {
+import { dataType } from "../components/interfaces";
+
+async function CallData(email:string, subject:string, message:string) {
+  let formInfo:dataType = {
     email: email,
     subject: subject,
     message: message,

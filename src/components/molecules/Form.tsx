@@ -2,32 +2,38 @@ import React from "react";
 import { useState } from "react";
 import "../../styles/Form.css";
 import { Nav } from "./Nav";
-import { CallData } from "../../http";
+import { CallData } from "../../http/index.js"
+import { dataType } from "../interfaces";
+
 
 function Form() {
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [data,setData]= useState<dataType>({
+    email:"",
+    subject:"",
+    message:""
+  })
 
   const [notificationBox, setNotificationBox] = useState(false);
 
-  const read = (e) => {
-    e.preventDefault();
-    CallData(email, subject, message);
+  const read = (event:React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    CallData(data.email!, data.subject!, data.message!);
     setNotificationBox(true);
   };
   const cancel = () => {
-    setEmail("");
-    setSubject("");
-    setMessage("");
+    setData({
+      email:"",
+      subject:"",
+      message:""
+    })
     setNotificationBox(false);
   };
 
   return (
     <>
       <Nav />
-      <section className="articles">
-        <article className="send-email">
+      <div className="articles">
+        <section className="send-email">
           <form className="send-email_form" onSubmit={read}>
             <h2 className="send-email_title">Contact Me!</h2>
             <section className="send-email_mail send-email-space">
@@ -38,9 +44,9 @@ function Form() {
                 type="text"
                 name="email"
                 required
-                value={email}
+                value={data.email}
                 onChange={(e) => {
-                  setEmail(e.target.value);
+                  setData({email:e.target.value});
                 }}
               />
             </section>
@@ -50,10 +56,10 @@ function Form() {
                 className="send-email_input"
                 type="text"
                 name="subject"
-                value={subject}
+                value={data.subject}
                 required
                 onChange={(e) => {
-                  setSubject(e.target.value);
+                  setData({subject:e.target.value});
                 }}
               />
             </section>
@@ -62,18 +68,18 @@ function Form() {
               <textarea
                 name="message"
                 className="box_message"
-                value={message}
+                value={data.message}
                 required
                 onChange={(e) => {
-                  setMessage(e.target.value);
+                setData({message:e.target.value});
                 }}
               ></textarea>
             </section>
 
             <input className="send-email_input_button" type="submit" />
           </form>
-        </article>
-        <articles
+        </section>
+        <section
           className={`notification_shallow_box ${!notificationBox && "inactive"}`}
         >
           <div className="notification_box">
@@ -82,8 +88,8 @@ function Form() {
               go back
             </button>
           </div>
-        </articles>
-      </section>
+        </section>
+      </div>
     </>
   );
 }

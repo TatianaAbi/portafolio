@@ -1,7 +1,11 @@
+const {tseslint} =require('typescript-eslint')
+
+
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
+    ...tseslint.configs.recommended,
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
@@ -23,13 +27,13 @@ module.exports = {
       'error',
       {
         endOfLine:'auto',
-        arrowParents:'avoid',
+        arrowParens:'avoid',
         bracketSpacing:true,
         printWith:80,
         quoteProps:'as-needed',
         semi:false,
         singleQuote:true,
-        TabWidth:2,
+        tabWidth:2,
         trailingComma:'none',
         jsxSingleQuote:true,
 

@@ -11,7 +11,7 @@ import { DefaultProjects } from "../molecules/DefaultProjects";
 import { useState } from "react";
 
 function Home() {
-  const [view, setView] = useState(false);
+  const [view, setView] = useState<boolean>(false);
 
   return (
     <>

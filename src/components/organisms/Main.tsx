@@ -11,7 +11,7 @@ const info = {
     I also manage the styles and designs of my web pages`,
 };
 
-function Main({ children }) {
+function Main({ children }:any) {
   return (
     <div className="main-container">
       <section className="article-container">
