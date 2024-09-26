@@ -1,4 +1,3 @@
-import React from 'react'
 import '../../styles/Header.css'
 import { HeaderInfo } from '../molecules/HeaderInfo'
 import { ImgContent } from '../atoms/ImgContent'

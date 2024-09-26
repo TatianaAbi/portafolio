@@ -8,13 +8,16 @@ const service = new ServiceEmail()
 const whitelist = ['http://localhost:5173']
 
 const options = {
-  origin: (origin: string | undefined, callback: (error: Error | null, pass?: boolean) => void) => {
+  origin: (
+    origin: string | undefined,
+    callback: (error: Error | null, pass?: boolean) => void
+  ) => {
     if (whitelist.includes(origin as string) || !origin) {
       callback(null, true)
     } else {
       callback(new Error('la direccion no tiene los permisos'))
     }
-  },
+  }
 }
 app.use(express.json())
 

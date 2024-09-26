@@ -7,7 +7,7 @@ import foodImg from '../img/food.png'
 import batatabitImg from '../img/batatabit.png'
 import randomCatImg from '../img/randomCats.png'
 
-export let portfolioData= [
+export let portfolioData = [
   {
     linkName: 'projects',
     slug: 'projects',
@@ -15,19 +15,19 @@ export let portfolioData= [
       {
         title: 'game',
         text: 'escape from a mine maze',
-        img: gameImg,
+        img: gameImg
       },
       {
         title: 'cashflow',
         text: 'website where you will manage your expenses and profits',
-        img: cashFlowImg,
+        img: cashFlowImg
       },
       {
         title: 'webMovies',
         text: 'It is a website for watching movies that are your favorites',
-        img: webMoviesImg,
-      },
-    ],
+        img: webMoviesImg
+      }
+    ]
   },
   {
     linkName: 'design',
@@ -37,15 +37,15 @@ export let portfolioData= [
       {
         title: 'blog',
         text: 'design with css and html of a blog',
-        img: blogImg,
+        img: blogImg
       },
       { title: 'food item', text: 'food website', img: foodImg },
       {
         title: 'batatabit',
         text: 'cryptocurrency information website',
-        img: batatabitImg,
-      },
-    ],
+        img: batatabitImg
+      }
+    ]
   },
   {
     linkName: 'others',
@@ -54,8 +54,8 @@ export let portfolioData= [
       {
         title: 'catWeb',
         text: 'see random images of cats',
-        img: randomCatImg,
-      },
-    ],
-  },
+        img: randomCatImg
+      }
+    ]
+  }
 ]

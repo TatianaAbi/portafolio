@@ -1,30 +1,28 @@
-import React from 'react'
 import { useState } from 'react'
 import '../../styles/Form.css'
 import { Nav } from './Nav'
 import { CallData } from '../../http/index.js'
 import { dataType } from '../interfaces'
 
-
 function Form() {
-  const [data,setData]= useState<dataType>({
-    email:'',
-    subject:'',
-    message:''
+  const [data, setData] = useState<dataType>({
+    email: '',
+    subject: '',
+    message: ''
   })
 
   const [notificationBox, setNotificationBox] = useState(false)
 
-  const read = (event:React.FormEvent<HTMLFormElement>) => {
+  const read = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     CallData(data.email!, data.subject!, data.message!)
     setNotificationBox(true)
   }
   const cancel = () => {
     setData({
-      email:'',
-      subject:'',
-      message:''
+      email: '',
+      subject: '',
+      message: ''
     })
     setNotificationBox(false)
   }
@@ -45,8 +43,8 @@ function Form() {
                 name='email'
                 required
                 value={data.email}
-                onChange={(e) => {
-                  setData({email:e.target.value})
+                onChange={e => {
+                  setData({ email: e.target.value })
                 }}
               />
             </section>
@@ -58,8 +56,8 @@ function Form() {
                 name='subject'
                 value={data.subject}
                 required
-                onChange={(e) => {
-                  setData({subject:e.target.value})
+                onChange={e => {
+                  setData({ subject: e.target.value })
                 }}
               />
             </section>
@@ -70,8 +68,8 @@ function Form() {
                 className='box_message'
                 value={data.message}
                 required
-                onChange={(e) => {
-                  setData({message:e.target.value})
+                onChange={e => {
+                  setData({ message: e.target.value })
                 }}
               ></textarea>
             </section>

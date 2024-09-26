@@ -7,9 +7,9 @@ class ServiceEmail {
 
   sendMessage(email: string, subject: string, message: string) {
     const transport = nodemailer.createTransport({
-      service:'gmail',
-      auth:{
-        user:'lg3165777@gmail.com',
+      service: 'gmail',
+      auth: {
+        user: 'lg3165777@gmail.com',
         pass: process.env.PASSWORD
       }
     })
@@ -38,18 +38,18 @@ class ServiceEmail {
       to: 'lg3165777@gmail.com',
       subject,
       text: message,
-      html: htmlRead,
+      html: htmlRead
     }
     const sendInfo = transport.sendMail(info, (error, info) => {
       if (error) {
         console.log(error)
       } else {
-        console.log('message '+ info.response)
+        console.log('message ' + info.response)
       }
     })
 
     return sendInfo
-  }   
+  }
 }
 
 export { ServiceEmail }

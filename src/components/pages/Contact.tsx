@@ -1,4 +1,3 @@
-import React from 'react'
 import { Nav } from '../molecules/Nav'
 import '../../styles/Contact.css'
 import { SocialLinksContainer } from '../molecules/SocialLinksContainer'

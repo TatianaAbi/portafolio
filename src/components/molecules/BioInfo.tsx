@@ -1,4 +1,3 @@
-import React from 'react'
 import '../../styles/BioInfo.css'
 import { SpanInfo } from '../atoms/SpanInfo'
 

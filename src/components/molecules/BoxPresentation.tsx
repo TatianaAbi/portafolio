@@ -1,4 +1,3 @@
-import React from 'react'
 import { ImgContent } from '../atoms/ImgContent'
 import '../../styles/BoxPresentation.css'
 

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 import '../../styles/Main.css'
 import { Button } from '../atoms/Button'
 import { ImgContent } from '../atoms/ImgContent'
@@ -9,7 +9,7 @@ const info = {
   text: `Hello, I am Tatiana Abigail and I am a frontend developer.
     worked with javascript for web page development
     and also using libraries and frameworks like react or vue
-    I also manage the styles and designs of my web pages`,
+    I also manage the styles and designs of my web pages`
 }
 
 type Props = {
@@ -18,7 +18,7 @@ type Props = {
 
 function Main(props: Props) {
   const { children } = props
-  
+
   return (
     <div className='main-container'>
       <section className='article-container'>

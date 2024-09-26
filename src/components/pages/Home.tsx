@@ -1,4 +1,3 @@
-import React from 'react'
 import '../../styles/Home.css'
 import { Nav } from '../molecules/Nav'
 import { Header } from '../organisms/Header'
@@ -20,7 +19,7 @@ function Home() {
       <Main>
         <div className='links-container'>
           <div className='links-list'>
-            {portfolioData.map((post) => (
+            {portfolioData.map(post => (
               <ProjectLinks post={post} key={post.slug} setView={setView} />
             ))}
           </div>

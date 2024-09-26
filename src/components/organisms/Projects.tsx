@@ -1,5 +1,4 @@
-import React from 'react'
-import {  useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { portfolioData } from '../portfolioData.js'
 import '../../styles/Projects.css'
 import { ImgContent } from '../atoms/ImgContent.js'
@@ -7,13 +6,13 @@ import { InfoBox } from '../atoms/InfoBox.js'
 import { project } from '../interfaces.js'
 
 function Projects() {
-  const { slug } = useParams<{slug: string}>()
-  
-  const blogData = portfolioData.find((post) => post.slug === slug)
-  if(!blogData){
+  const { slug } = useParams<{ slug: string }>()
+
+  const blogData = portfolioData.find(post => post.slug === slug)
+  if (!blogData) {
     return <p>no hay nada</p>
   }
-  const projects:project[]  = blogData.projects
+  const projects: project[] = blogData.projects
 
   return (
     <div className='carousel'>
