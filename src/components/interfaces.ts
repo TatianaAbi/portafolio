@@ -31,7 +31,7 @@ export interface propsLink{
 }
 export interface propsSpan{
     date:string,
-    sentence:String
+    sentence:string
 }
 export interface linksProject{
     linkName:string,

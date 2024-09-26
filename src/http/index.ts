@@ -1,19 +1,19 @@
-import { dataType } from "../components/interfaces";
+import { dataType } from '../components/interfaces'
 
 async function CallData(email:string, subject:string, message:string) {
-  let formInfo:dataType = {
+  const formInfo:dataType = {
     email: email,
     subject: subject,
     message: message,
-  };
+  }
 
-  await fetch("http://localhost:3010/", {
-    method: "POST",
+  await fetch('http://localhost:3010/', {
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify(formInfo),
-  });
+  })
 }
 
-export { CallData };
+export { CallData }

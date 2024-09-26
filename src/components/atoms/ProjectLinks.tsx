@@ -1,12 +1,12 @@
-import React from "react";
-import { propsLink } from "../interfaces";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { propsLink } from '../interfaces'
+import { Link } from 'react-router-dom'
 
-const ProjectLinks: React.FC<propsLink> = ({ post, setView }) => {
+function ProjectLinks ({ post, setView }:propsLink){
   return (
-    <Link to={post.slug} className="link-option" onClick={() => setView(true)}>
+    <Link to={post.slug} className='link-option' onClick={() => setView(true)}>
       {post.linkName}
     </Link>
-  );
+  )
 };
-export { ProjectLinks };
+export { ProjectLinks }
