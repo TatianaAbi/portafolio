@@ -1,4 +1,3 @@
-import React from 'react'
 import '../../styles/CartPresentation.css'
 function CartPresentation() {
   return (
