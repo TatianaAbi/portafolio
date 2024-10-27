@@ -24,5 +24,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: download dependencies
-      run: |
-       npm install
+      run: npm install
+      
+    - name: run eslint with prettier
+      run: npm run lint
+      
+    - name: test dev
+      run: npm run dev
+
+    - name: test backend
+      run: npm run start
